@@ -1,10 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "تثبيت المتطلبات إذا وجدت..."
-if [[ -f requirements.txt ]]; then
-  python3 -m pip install --upgrade pip
-  python3 -m pip install -r requirements.txt
-fi
+# تنصيب المتطلبات
+pip install -r requirements.txt
 
-echo "تشغيل main.py..."
-python3 main.py
+# تشغيل الملف الرئيسي
+python main.py
